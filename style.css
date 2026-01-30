@@ -14,27 +14,19 @@ body {
     width: 100%;
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 8% 20% 45% 27%;
-    
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 30% 70%;
+    gap: 10px 5px;
+    padding: 15px;
 }
-.child{
-    background-color: lightseagreen;
-    border: 2px solid white;
 
+.child{
+    background-color: #077b7b;
+    border: 2px solid white;
 }
+
 #child1{
     background-color: crimson;
     grid-column-start: 1;
-    grid-column-end: 3;
-}
-#child4{
-    background-color: tan;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-#child5{
-    background-color: rebeccapurple;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
 }
