@@ -1,28 +1,33 @@
 * {
-     margin: 0;
-     padding:0;
-     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 html,
 body {
-     height:100%;
-     width:100%;
-}
-
-.parent{
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 100px 2fr 1fr 1fr;
-    
 }
 
-.child{
+.parent {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+   display: grid;
+   grid-template-columns: 2fr 1fr 1.5fr;
+   grid-template-rows: 100px 2fr 1fr 2.5fr 3fr;
+   gap: 10px;
+   padding: 15px 20px;
+
+}
+
+.child {
     height: 100%;
     width: 100%;
     background-color: rgb(5, 87, 60);
     border: 2px solid white;
+    border-radius: 10px;
 }
 
 #child1{
@@ -30,28 +35,38 @@ body {
     grid-column-start: 1;
     grid-column-end: 4;
 }
-#child5{
-    background-color: lightslategray;
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-#child6{
-    background-color: lightseagreen;
-    grid-row-start: 3;
-    grid-row-end: 4;
+
+#child3{
+    background-color: rgb(13, 186, 178);
     grid-column-start: 2;
     grid-column-end: 4;
 }
 
-#child7{
-    background-color: lightcoral;
-    grid-row-start: 4;
+#child4{
+    background-color: lightsalmon;
+}
+
+#child5{
+    background-color: blueviolet;
+    grid-row-start: 3;
     grid-row-end: 5;
     grid-column-start: 2;
+
 }
-#child8{
-    background-color: orange;
-    grid-row-start: 4;
-    grid-row-end: 5;
+
+#child6{
+    background-color: rgb(23, 176, 23);
+    grid-row-start: 3;
+    grid-row-end: 6;
     grid-column-start: 3;
+}
+
+#child7{
+    background-color: peru;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#child8{
+    background-color: blanchedalmond;
 }
