@@ -10,63 +10,63 @@ body {
     width: 100%;
 }
 
-.parent {
+main {
     height: 100%;
     width: 100%;
     background-color: black;
-   display: grid;
-   grid-template-columns: 2fr 1fr 1.5fr;
-   grid-template-rows: 100px 2fr 1fr 2.5fr 3fr;
-   gap: 10px;
-   padding: 15px 20px;
-
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.3fr;
+    grid-template-rows: 100px 1fr 90px 0.8fr 1.6fr;
+    grid-template-areas:
+        "nav nav nav"
+        "hero hero hero"
+        "cta center1 right"
+        "left center1 right"
+        "left center2 right"
+    ;
+    gap: 20px;
+    padding: 10px;
 }
 
 .child {
     height: 100%;
     width: 100%;
-    background-color: rgb(5, 87, 60);
     border: 2px solid white;
+    background-color: rgb(4, 25, 95);
     border-radius: 10px;
 }
 
-#child1{
+#nav {
     background-color: crimson;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-area: nav;
 }
 
-#child3{
-    background-color: rgb(13, 186, 178);
-    grid-column-start: 2;
-    grid-column-end: 4;
+#hero {
+    background-color: cadetblue;
+    grid-area: hero;
 }
 
-#child4{
-    background-color: lightsalmon;
+#cta {
+    background-color: lightseagreen;
+    grid-area: cta;
 }
 
-#child5{
-    background-color: blueviolet;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    grid-column-start: 2;
-
+#left {
+    background-color: lightskyblue;
+    grid-area: left;
 }
 
-#child6{
-    background-color: rgb(23, 176, 23);
-    grid-row-start: 3;
-    grid-row-end: 6;
-    grid-column-start: 3;
+#center1 {
+    background-color: bisque;
+    grid-area: center1;
 }
 
-#child7{
-    background-color: peru;
-    grid-row-start: 4;
-    grid-row-end: 6;
+#center2 {
+    background-color: rgb(105, 70, 5);
+    grid-area: center2;
 }
 
-#child8{
-    background-color: blanchedalmond;
+#right {
+    background-color: chartreuse;
+    grid-area: right;
 }
